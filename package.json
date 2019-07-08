@@ -1,0 +1,23 @@
+{
+  "name": "@zhangyiant/antlr-verilog-lsp-parser",
+  "version": "1.0.0",
+  "description": "My verilog LSP parser for vscode-verilog plugin",
+  "homepage": "https://github.com/zhangyiant/antlr-verilog-lsp-parser.git",
+  "keywords": [
+    "verilog",
+    "antlr4",
+    "parser"
+  ],
+  "main": "src/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yi Zhang",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "antlr4": "^4.7.2"
+  }
+}
