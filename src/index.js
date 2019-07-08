@@ -44,7 +44,11 @@ function parse(document) {
   return {};
 }
 
-// var input = fs.readFileSync("resources/a.v", {encoding: "utf8"});
-// var result = parse(input);
-// console.log(result);
+
 module.exports.parse = parse;
+
+if (require.main === module) {
+    var input = fs.readFileSync("resources/a.v", {encoding: "utf8"});
+    var result = parse(input);
+  console.log(result);
+}
