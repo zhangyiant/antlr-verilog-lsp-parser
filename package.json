@@ -15,8 +15,7 @@
   },
   "author": "Yi Zhang",
   "license": "MIT",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
     "antlr4": "^4.7.2"
   }
