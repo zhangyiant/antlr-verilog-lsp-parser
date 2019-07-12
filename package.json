@@ -18,5 +18,8 @@
   "devDependencies": {},
   "dependencies": {
     "antlr4": "^4.7.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
