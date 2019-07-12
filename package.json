@@ -1,6 +1,6 @@
 {
   "name": "@zhangyiant/antlr-verilog-lsp-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My verilog LSP parser for vscode-verilog plugin",
   "homepage": "https://github.com/zhangyiant/antlr-verilog-lsp-parser.git",
   "keywords": [
