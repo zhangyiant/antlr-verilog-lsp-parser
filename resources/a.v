@@ -4,7 +4,7 @@ encoder_in ,
 enable       
 ); 
 
-tput [3:0] binary_out  ;
+input [3:0] binary_out  ;
 //-----------Input Ports---------------
 input  enable ; 
 input [15:0] encoder_in ; 

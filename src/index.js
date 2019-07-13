@@ -38,10 +38,27 @@ function parse(document) {
   parser.buildParseTrees = true;
   var tree = parser.module_declaration();
   var module_indentifier = tree.module_identifier();
+  var result = {};
   if (module_indentifier) {
-    return { "module_name": module_indentifier.getText()}
+    result["module_name"] = module_indentifier.getText()
   }
-  return {};
+  var portDeclarations = tree.list_of_port_declarations();
+  if (portDeclarations) {
+    // console.log(portDeclarations);
+  }
+  var portLists= tree.list_of_ports();
+  if (portLists) {
+    var ports = portLists.port();
+    result["list_of_ports"] = [];
+    for (port of ports) {
+      result["list_of_ports"].push(port.getText());
+    }
+  }
+  var moduleParameterPortLists = tree.module_parameter_port_list();
+  if (moduleParameterPortLists) {
+    // console.log(moduleParameterPortLists);
+  }
+  return result;
 }
 
 
